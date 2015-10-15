@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.7)
+    json (1.8.2)
+    netrc (0.7.9)
+    rest_client (1.8.1)
+      netrc (~> 0.7.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  addressable
+  json
+  rest_client (= 1.8.1)

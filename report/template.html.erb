@@ -1,0 +1,49 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1.1", {packages:["bar"]});
+        google.setOnLoadCallback(drawMultiChart);
+
+        function drawMultiChart(){
+          drawChart(<%=daily%>, "Dev Done Daily Chart","<%=from_to%>", "all")
+
+          <% data.each_key do |date| %>
+          drawChart([['Developer', 'Goal', 'Dev Done'], <%=data[date]%>], "I18N Bug Fix Status - By Developer", '<%=Date.parse(date).strftime("%m/%d/%Y %A")%>', <%=date%>);
+          <% end %>
+        }
+
+        function drawChart(content, title, subtitle, ele_id) {
+            var data = google.visualization.arrayToDataTable(content);
+
+            var options = {
+                chart: {
+                    title: title,
+                    subtitle: subtitle
+                }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById(ele_id));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+<div style="width:100%">
+  <b>Instructions:</b>
+  <ul>
+    <li>Dev Done: Story's status = 39(coding) with a label "Dev_done" <b>OR</b> Story's status > 60 </li>
+  </ul>
+</div>
+<hr/>
+<div id="all" style="width: <%=daily.length * 150 %>px; height: 400px;"></div>
+<hr/>
+<div style="width:100%">
+  <% data.each_key do |date|  %>
+      <div id="<%=date%>" style="width: 500px; height: 400px; float: left"></div>
+  <% end %>
+  <div style="clear:both;"></div>
+</div>
+</body>
+</html>

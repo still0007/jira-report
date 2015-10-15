@@ -1,0 +1,85 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1.1", {packages:["bar"]});
+        google.setOnLoadCallback(drawMultiChart);
+
+        function drawMultiChart(){
+          drawChart([["Date", "Dev Done"], ["04/23/2015", 46], ["04/24/2015", 63], ["04/27/2015", 71], ["04/29/2015", 75], ["04/30/2015", 83], ["05/04/2015", 84], ["05/05/2015", 84], ["05/07/2015", 85], ["05/08/2015", 90], ["05/11/2015", 91]], "Dev Done Daily Chart","04/17/2015 Friday - 05/11/2015 Monday", "all")
+
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 18, 5],['Yongwen Zhao', 30, 30],['Kaiyu Zhang', 6, 8],['Fengzhen Cao', 6, 1],['Baiyu Xi', 6, 2],['Total', 78, 46]], "I18N Bug Fix Status - By Developer", '04/23/2015 Thursday', 20150423);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 21, 7],['Yongwen Zhao', 35, 38],['Kaiyu Zhang', 7, 11],['Fengzhen Cao', 7, 1],['Baiyu Xi', 7, 6],['Total', 91, 63]], "I18N Bug Fix Status - By Developer", '04/24/2015 Friday', 20150424);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 24, 7],['Yongwen Zhao', 40, 42],['Kaiyu Zhang', 8, 11],['Fengzhen Cao', 8, 5],['Baiyu Xi', 8, 6],['Total', 104, 71]], "I18N Bug Fix Status - By Developer", '04/27/2015 Monday', 20150427);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 27, 7],['Yongwen Zhao', 45, 46],['Kaiyu Zhang', 9, 11],['Fengzhen Cao', 9, 5],['Baiyu Xi', 9, 6],['Total', 117, 75]], "I18N Bug Fix Status - By Developer", '04/29/2015 Wednesday', 20150429);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 30, 7],['Yongwen Zhao', 50, 46],['Kaiyu Zhang', 10, 11],['Fengzhen Cao', 10, 5],['Baiyu Xi', 10, 14],['Total', 130, 83]], "I18N Bug Fix Status - By Developer", '04/30/2015 Thursday', 20150430);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 36, 7],['Yongwen Zhao', 60, 46],['Kaiyu Zhang', 12, 12],['Fengzhen Cao', 12, 5],['Baiyu Xi', 12, 14],['Total', 156, 84]], "I18N Bug Fix Status - By Developer", '05/04/2015 Monday', 20150504);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 39, 7],['Yongwen Zhao', 65, 45],['Kaiyu Zhang', 12, 12],['Fengzhen Cao', 12, 5],['Baiyu Xi', 12, 14],['Total', 154, 84]], "I18N Bug Fix Status - By Developer", '05/05/2015 Tuesday', 20150505);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 45, 7],['Yongwen Zhao', 75, 46],['Kaiyu Zhang', 12, 12],['Fengzhen Cao', 12, 6],['Baiyu Xi', 12, 14],['Total', 154, 85]], "I18N Bug Fix Status - By Developer", '05/07/2015 Thursday', 20150507);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 48, 7],['Yongwen Zhao', 80, 48],['Kaiyu Zhang', 12, 12],['Fengzhen Cao', 12, 9],['Baiyu Xi', 12, 14],['Total', 154, 90]], "I18N Bug Fix Status - By Developer", '05/08/2015 Friday', 20150508);
+          
+          drawChart([['Developer', 'Goal', 'Dev Done'], ['Silu Yang', 51, 7],['Yongwen Zhao', 85, 49],['Kaiyu Zhang', 12, 12],['Fengzhen Cao', 12, 9],['Baiyu Xi', 12, 14],['Total', 154, 91]], "I18N Bug Fix Status - By Developer", '05/11/2015 Monday', 20150511);
+          
+        }
+
+        function drawChart(content, title, subtitle, ele_id) {
+            var data = google.visualization.arrayToDataTable(content);
+
+            var options = {
+                chart: {
+                    title: title,
+                    subtitle: subtitle
+                }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById(ele_id));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+<div style="width:100%">
+  <b>Instructions:</b>
+  <ul>
+    <li>Dev Done: Story's status = 39(coding) with a label "Dev_done" <b>OR</b> Story's status > 60 </li>
+  </ul>
+</div>
+<hr/>
+<div id="all" style="width: 1650px; height: 400px;"></div>
+<hr/>
+<div style="width:100%">
+  
+      <div id="20150423" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150424" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150427" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150429" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150430" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150504" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150505" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150507" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150508" style="width: 500px; height: 400px; float: left"></div>
+  
+      <div id="20150511" style="width: 500px; height: 400px; float: left"></div>
+  
+  <div style="clear:both;"></div>
+</div>
+</body>
+</html>

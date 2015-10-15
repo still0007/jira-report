@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>Detailed Report of I18N Bug Fixing</title>
+  <style>
+    .label{
+      border: 1px solid black;
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 8pt;
+      background-color: orange;
+      color: white;
+    }
+    .dev_done{
+      background-color: green;
+      color: white;
+    }
+    .status, .status10, .status11, .status25, .status60{
+      color: red;
+    }
+    .status15, .status30, .status31, .status32, .status39, .status74, .status83, .status90, .status91, .status92{
+      color: green;
+    }
+    .avatar{
+      width: 16px;
+      height: 16px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    function toggleNext(ele){
+      $(ele).next().toggle();
+    }
+  </script>
+</head>
+<body>
+<div style="width:100%;text-align: right;font-size: 10px;">Generated at: <%= Time.new.strftime('%m/%d/%Y %H:%M') %></div>
+<h1>Summary by Status</h1>
+<hr/>
+<% statistics_by_status.keys.sort.each do |status| %>
+    <span class="status status<%=status.split(' ')[0]%>" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)"><%= status %>      -    (<%= statistics_by_status[status]['total'] %>)</span>
+    <div style="display: none;margin-top: 10px;">
+    <% statistics_by_status[status]['issues'].each do |issue| %>
+        <img class="avatar" title="<%= issue['assignee']%>" src="images/<%= issue['assignee'].gsub(/ /, '').downcase %>.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/<%=issue['key']%>" target="_BLANK"><%=issue['key']%> - <%=issue['summary']%></a>
+        <span class="label <%=issue['labels'].join(" ")%>"><%=issue['labels'].join(" ")%></span>
+        <br>
+    <% end %>
+    </div>
+<% end %>
+<%=total%> in total.
+<br>
+<h1>Summary by Developers</h1>
+<hr/>
+<% statistics_by_developer.keys.sort.each do |name| %>
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)"><%= name %></span>
+    <div style="display: none;margin-top: 10px;">
+      <% statistics_by_developer[name].keys.sort.each do |status| %>
+      <div class="status status<%=status.split(' ')[0]%>" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;"><%= status %></div>
+      <% statistics_by_developer[name][status].each do |issue| %>
+          <a href="https://jira.oraclecorp.com/jira/browse/<%=issue['key']%>" target="_BLANK"><%=issue['key']%> - <%=issue['summary']%></a><span class="label <%=issue['labels'].join(" ")%>"><%=issue['labels'].join(" ")%></span><br>
+      <% end %>
+      <% end %>
+    </div>
+<% end %>
+<br>
+<h1>Unassigned Stories</h1>
+<hr/>
+<% statistics_not_assigned.keys.sort.each do |label| %>
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)"><%= label %> (<%=statistics_not_assigned[label].count%>)</span>
+    <div style="display: none;margin-top: 10px;">
+      <% statistics_not_assigned[label].each do |issue| %>
+        <a href="https://jira.oraclecorp.com/jira/browse/<%=issue['key']%>" target="_BLANK"><%=issue['key']%> - <%=issue['summary']%></a><br>
+      <% end %>
+    </div>
+<% end %>
+</body>
+</html>

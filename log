@@ -1,0 +1,150 @@
+******* Added labels ["for_review_tabs_shop"] for OSMCLOUD-7324
+******* Added labels ["FUN"] for OSMCLOUD-4035
+******* Added labels ["HCS", "dev_done", "i18n", "nls_incorrect_I18N"] for OSMCLOUD-3645
+******* Added labels ["TSI", "formable", "hy"] for OSMCLOUD-3629
+******* Added labels ["TSI", "formable", "hy"] for OSMCLOUD-3604
+******* Added labels ["for_review_tabs_shop", "nls_not_a_bug", "test"] for OSMCLOUD-3514
+******* Added labels ["HCS", "i18n"] for OSMCLOUD-3512
+******* Added labels ["HCS", "i18n", "nls_not_a_bug"] for OSMCLOUD-3501
+******* Added labels ["Lvl1", "i18n", "kk"] for OSMCLOUD-3427
+******* Added labels [] for OSMCLOUD-3325
+******* Added labels ["COSE", "nls_not_a_bug"] for OSMCLOUD-3282
+******* Added labels [] for OSMCLOUD-3278
+******* Added labels [] for OSMCLOUD-3277
+******* Added labels [] for OSMCLOUD-3237
+******* Added labels [] for OSMCLOUD-3233
+******* Added labels ["i18n", "kk", "nextsprint"] for OSMCLOUD-3222
+******* Added labels [] for OSMCLOUD-3219
+******* Added labels ["SHOP"] for OSMCLOUD-3217
+******* Added labels [] for OSMCLOUD-3216
+******* Added labels [] for OSMCLOUD-3215
+******* Added labels ["Shop"] for OSMCLOUD-3184
+******* Added labels [] for OSMCLOUD-3172
+******* Added labels ["Automation", "FUN", "Lvl3"] for OSMCLOUD-3129
+******* Added labels [] for OSMCLOUD-2966
+******* Added labels ["i18n", "kk"] for OSMCLOUD-2912
+******* Added labels ["HCS", "Lvl2", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2817
+******* Added labels ["FUN", "Lvl2"] for OSMCLOUD-2815
+******* Added labels ["HCS", "Lvl3", "dev_done", "i18n", "nls_incorrect_I18N"] for OSMCLOUD-2797
+******* Added labels ["HCS", "Lvl1", "i18n"] for OSMCLOUD-2793
+******* Added labels ["Lvl2", "UFONT", "dev_done", "i18n", "nls_incorrect_I18N"] for OSMCLOUD-2777
+******* Added labels ["HCS", "Lvl3", "i18n", "nls_not_a_bug"] for OSMCLOUD-2774
+******* Added labels ["FUN", "nextsprint"] for OSMCLOUD-2740
+******* Added labels ["nextsprint"] for OSMCLOUD-2732
+******* Added labels ["Lvl3", "TSI", "cache", "kk", "tabs"] for OSMCLOUD-2719
+******* Added labels ["HCS", "Lvl1", "T9N", "dev_done", "i18n", "nls_not_a_bug"] for OSMCLOUD-2708
+******* Added labels ["T9N", "i18n", "nls_cannot_reproduce"] for OSMCLOUD-2705
+******* Added labels ["Sev2", "T9N", "i18n", "ie8", "nextsprint", "nls_code_defect"] for OSMCLOUD-2702
+******* Added labels ["HCS", "i18n", "lvl1", "nls_code_defect"] for OSMCLOUD-2700
+******* Added labels ["HCS", "dev_done", "i18n", "lvl1", "nls_code_defect"] for OSMCLOUD-2698
+******* Added labels ["nextsprint", "sk"] for OSMCLOUD-2691
+******* Added labels ["FUN", "i18n", "ie8"] for OSMCLOUD-2686
+******* Added labels ["HCS", "i18n", "lvl1", "nls_cannot_reproduce"] for OSMCLOUD-2684
+******* Added labels ["Lvl3", "Sev2", "TZC", "dev_done", "i18n", "nextsprint", "nls_code_defect"] for OSMCLOUD-2680
+******* Added labels ["Lvl2", "SUNC", "i18n", "nls_format_issue"] for OSMCLOUD-2679
+******* Added labels ["Lvl3", "connections", "kk"] for OSMCLOUD-2645
+******* Added labels ["FUN", "Lvl3"] for OSMCLOUD-2632
+******* Added labels ["FUN"] for OSMCLOUD-2608
+******* Added labels ["Automation", "FUN", "Sev2", "nextsprint", "nlshot-socialcloud"] for OSMCLOUD-2594
+******* Added labels ["FUN", "automation"] for OSMCLOUD-2568
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2536
+******* Added labels ["Automation", "HCS"] for OSMCLOUD-2534
+******* Added labels ["SUNC", "i18n", "nls_format_issue"] for OSMCLOUD-2533
+******* Added labels ["SUNC", "i18n", "nls_format_issue"] for OSMCLOUD-2531
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2514
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2513
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2512
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2511
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2510
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2509
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2508
+******* Added labels ["HCS", "T13YCT"] for OSMCLOUD-2507
+******* Added labels ["HCS", "dev_done", "nls_code_defect"] for OSMCLOUD-2505
+******* Added labels ["contest", "uplodable", "voting"] for OSMCLOUD-2490
+******* Added labels ["Automation", "Lvl2", "TRCA", "i18n"] for OSMCLOUD-2450
+******* Added labels ["Automation", "FUN"] for OSMCLOUD-2448
+******* Added labels ["Automation", "HCS", "dev_done", "i18n", "nls_other"] for OSMCLOUD-2446
+******* Added labels ["Automation", "HCS", "Lvl3", "i18n"] for OSMCLOUD-2436
+******* Added labels ["Automation", "TRCA", "i18n"] for OSMCLOUD-2430
+******* Added labels ["Lvl2", "TRCA", "automation", "i18n", "layout"] for OSMCLOUD-2425
+******* Added labels ["Automation", "Lvl1", "T9N", "TSI", "i18n", "nls_cannot_reproduce"] for OSMCLOUD-2423
+******* Added labels ["Automation", "FUN"] for OSMCLOUD-2421
+******* Added labels ["FUN"] for OSMCLOUD-2420
+******* Added labels ["ATG", "Sev2", "Shop", "nextsprint"] for OSMCLOUD-2408
+******* Added labels ["AS", "comments-module", "nextsprint"] for OSMCLOUD-2257
+******* Added labels ["ATG", "FF"] for OSMCLOUD-2228
+******* Added labels ["JS", "T9N", "Tranlsate", "i18n", "nextsprint"] for OSMCLOUD-2207
+******* Added labels ["HCS", "by", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2149
+******* Added labels ["HCS", "by", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2148
+******* Added labels ["HCS", "by", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2147
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2146
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2145
+******* Added labels ["HCS", "by", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2144
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2143
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2140
+******* Added labels ["HCS", "TRCA", "dev_done", "nls_code_defect"] for OSMCLOUD-2139
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2138
+******* Added labels ["HCS", "i18n"] for OSMCLOUD-2137
+******* Added labels ["HCS", "i18n"] for OSMCLOUD-2136
+******* Added labels ["DEC30", "FF", "HCS"] for OSMCLOUD-2132
+******* Added labels ["HCS", "i18n"] for OSMCLOUD-2129
+******* Added labels ["HCS", "i18n"] for OSMCLOUD-2125
+******* Added labels ["HCS", "i18n", "staging"] for OSMCLOUD-2123
+******* Added labels ["HCS", "i18n"] for OSMCLOUD-2122
+******* Added labels ["HCS", "Mar", "i18n"] for OSMCLOUD-2121
+******* Added labels ["HCS", "i18n"] for OSMCLOUD-2117
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2116
+******* Added labels ["HCS", "i18n"] for OSMCLOUD-2115
+******* Added labels ["HCS", "dev_done", "i18n", "nls_not_a_bug"] for OSMCLOUD-2113
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2112
+******* Added labels ["HCS", "by", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2111
+******* Added labels ["HCS", "by", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2110
+******* Added labels ["HCS", "by", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2108
+******* Added labels ["HCS", "by", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2107
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2106
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2105
+******* Added labels ["HCS", "i18n", "staging"] for OSMCLOUD-2103
+******* Added labels ["HCS", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-2102
+******* Added labels ["FORMABLE", "GUNC", "I18N", "KK"] for OSMCLOUD-2048
+******* Added labels ["FUN", "Lvl2"] for OSMCLOUD-2035
+******* Added labels ["FUN"] for OSMCLOUD-2034
+******* Added labels ["FUN", "Lvl2"] for OSMCLOUD-2033
+******* Added labels ["HCS", "Lvl1", "i18n", "t13y"] for OSMCLOUD-2032
+******* Added labels ["FUN", "Lvl2"] for OSMCLOUD-2030
+******* Added labels ["HCS", "i18n", "t13y"] for OSMCLOUD-2027
+******* Added labels ["HCS", "i18n", "sev3", "t13y"] for OSMCLOUD-2026
+******* Added labels ["HCS", "i18n", "sev3", "t13y"] for OSMCLOUD-2024
+******* Added labels ["Automation", "FUN", "QACheck"] for OSMCLOUD-1995
+******* Added labels ["ATG", "FF", "Sev2"] for OSMCLOUD-1970
+******* Added labels ["HCS", "Lvl3", "NLS", "VERSIONONEBRIDGE", "i18n", "t13y"] for OSMCLOUD-1827
+******* Added labels ["Automation", "FUN", "Sev2", "VERSIONONEBRIDGE"] for OSMCLOUD-1822
+******* Added labels ["Automation", "FUN", "Lvl2", "VERSIONONEBRIDGE"] for OSMCLOUD-1806
+******* Added labels ["HCS", "Lvl3", "QACheck", "Sev2", "VERSIONONEBRIDGE", "i18n", "nls_cannot_reproduce"] for OSMCLOUD-1804
+******* Added labels ["Automation", "FUN", "Lvl1", "VERSIONONEBRIDGE"] for OSMCLOUD-1803
+******* Added labels ["FUN", "VERSIONONEBRIDGE", "i18n"] for OSMCLOUD-1797
+******* Added labels ["FUN", "VERSIONONEBRIDGE", "i18n"] for OSMCLOUD-1796
+******* Added labels ["Lvl3", "NLS", "UFONT", "VERSIONONEBRIDGE", "i18n"] for OSMCLOUD-1790
+******* Added labels ["I18N", "Lvl3", "T9N", "VERSIONONEBRIDGE", "WPTG", "WPTG-UI", "nls_cannot_reproduce"] for OSMCLOUD-1645
+******* Added labels ["I18N", "T9N", "VERSIONONEBRIDGE", "WPTG", "WPTG-TR", "nls_other"] for OSMCLOUD-1636
+******* Added labels ["I18N", "T9N", "VERSIONONEBRIDGE", "WPTG", "WPTG-TR", "nls_cannot_reproduce"] for OSMCLOUD-1629
+******* Added labels ["I18N", "T9N", "VERSIONONEBRIDGE", "WPTG", "WPTG-TR", "dev_done", "nls_other"] for OSMCLOUD-1628
+******* Added labels ["I18N", "VERSIONONEBRIDGE", "WPTG", "WPTG-TR"] for OSMCLOUD-1626
+******* Added labels ["Lvl3", "T9N", "VERSIONONEBRIDGE", "i18n", "nls_cannot_reproduce"] for OSMCLOUD-1603
+******* Added labels ["I18N", "Lvl3", "VERSIONONEBRIDGE", "WPTG", "WPTG-FI", "function", "nls_other"] for OSMCLOUD-1488
+******* Added labels ["I18N", "Shop", "T9N", "VERSIONONEBRIDGE", "WPTG", "WPTG-FI"] for OSMCLOUD-1483
+******* Added labels ["WPTG_PT14840/SSOT574/LADA2096]", "[WPTG_TSN:T9N:TOKEN:SOCIAL:S3:1-230199", "dev_done", "nls_other"] for OSMCLOUD-1473
+******* Added labels ["HCS", "Lvl3", "VERSIONONEBRIDGE", "i18n", "nls", "nls_not_a_bug", "t13y"] for OSMCLOUD-1347
+******* Added labels ["HCS", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_code_defect", "t13y"] for OSMCLOUD-1340
+******* Added labels ["QACheck", "Sev3", "TRCA", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_code_defect"] for OSMCLOUD-1332
+******* Added labels ["HCS", "Lvl1", "Sev3", "VERSIONONEBRIDGE", "i18n", "t13y"] for OSMCLOUD-1257
+******* Added labels ["HCS", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_code_defect", "t13y"] for OSMCLOUD-1183
+******* Added labels ["HCS", "Sev2", "i18n", "t13y"] for OSMCLOUD-1159
+******* Added labels ["HCS", "Lvl3", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_code_defect", "t13y"] for OSMCLOUD-1112
+******* Added labels ["HCS", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_code_defect", "t13y"] for OSMCLOUD-976
+******* Added labels ["HCS", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_code_defect", "t13y"] for OSMCLOUD-974
+******* Added labels ["HCS", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_code_defect", "t13y"] for OSMCLOUD-953
+******* Added labels ["HCS", "Lvl3", "Sev2", "VERSIONONEBRIDGE", "i18n", "nls_cannot_reproduce", "t13y"] for OSMCLOUD-767
+******* Added labels ["HCS", "Lvl3", "NLS", "Sev2", "VERSIONONEBRIDGE", "i18n", "nls", "nls_code_defect", "t13y"] for OSMCLOUD-762
+******* Added labels ["Lvl3", "TRCA", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_cannot_reproduce", "nls_code_defect"] for OSMCLOUD-735
+******* Added labels ["HCS", "Lvl3", "Sev3", "VERSIONONEBRIDGE", "dev_done", "i18n", "nls_code_defect", "t13y"] for OSMCLOUD-717
+******* Added labels ["HCS", "VERSIONONEBRIDGE", "i18n", "nls_cannot_reproduce", "t13y"] for OSMCLOUD-467

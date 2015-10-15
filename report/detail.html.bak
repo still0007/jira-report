@@ -1,0 +1,1763 @@
+<html>
+<head>
+  <title>Detailed Report of I18N Bug Fixing</title>
+  <style>
+    .label{
+      border: 1px solid black;
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 8pt;
+      background-color: orange;
+      color: white;
+    }
+    .dev_done{
+      background-color: green;
+      color: white;
+    }
+    .status, .status10, .status11, .status25, .status60{
+      color: red;
+    }
+    .status15, .status30, .status31, .status32, .status39, .status74, .status83, .status90, .status91, .status92{
+      color: green;
+    }
+    .avatar{
+      width: 16px;
+      height: 16px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    function toggleNext(ele){
+      $(ele).next().toggle();
+    }
+  </script>
+</head>
+<body>
+<div style="width:100%;text-align: right;font-size: 10px;">Generated at: 06/02/2015 11:21</div>
+<h1>Summary by Status</h1>
+<hr/>
+
+    <span class="status status11" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">11 - Code/Hardware Bug (Response/Resolution)      -    (1)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1488" target="_BLANK">OSMCLOUD-1488 - WPTG Social SV:Social Marketing:STRING NOT RELEVANT FOR LANGUAGE USE</a>
+        <span class="label nls_other">nls_other</span>
+        <br>
+    
+    </div>
+
+    <span class="status status15" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">15 - Enhancement Req. Internal(Oracle) Review      -    (3)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="groundbreakers_us_grp" src="images/groundbreakers_us_grp.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2422" target="_BLANK">OSMCLOUD-2422 - NLS:T13Y: Strings are hard coded in Spotify editing dialog </a>
+        <span class="label nls_code_defect">nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="groundbreakers_us_grp" src="images/groundbreakers_us_grp.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1266" target="_BLANK">OSMCLOUD-1266 - NLS:T13Y:String "Default Brand Template" is hard coded</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="groundbreakers_us_grp" src="images/groundbreakers_us_grp.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4639" target="_BLANK">OSMCLOUD-4639 - NLSFUN:"full with alph" and "half with alph" should be in common use.</a>
+        <span class="label nls_other">nls_other</span>
+        <br>
+    
+    </div>
+
+    <span class="status status26" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">26 - Open/Failed Verification      -    (1)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-767" target="_BLANK">OSMCLOUD-767 - NLS:T13Y:Search function does not work for module Photo Album</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+    </div>
+
+    <span class="status status30" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">30 - Additional Information Requested      -    (2)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="SRM Unassigned" src="images/srmunassigned.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1500" target="_BLANK">OSMCLOUD-1500 - WPTG Social DE:Social Marketing:STRING NUKU'ALOFA DISPLAYED ON DEALS SCREEN</a>
+        <span class="label nls_cannot_reproduce nls_incorrect_I18N">nls_cannot_reproduce nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="SRM Unassigned" src="images/srmunassigned.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1636" target="_BLANK">OSMCLOUD-1636 - WPTG Social JA:Social Marketing:INVALID_TR:CONTENT:CONTEST SUBMISSION MODERATION</a>
+        <span class="label nls_other">nls_other</span>
+        <br>
+    
+    </div>
+
+    <span class="status status31" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">31 - Could Not Reproduce. To Filer      -    (16)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4510" target="_BLANK">OSMCLOUD-4510 - OARDC:NLS "Also post on facebook" should be translated in Japanese.</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4509" target="_BLANK">OSMCLOUD-4509 - OARDC:NLS: "Add comment" should be translated in Japanese.</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4508" target="_BLANK">OSMCLOUD-4508 - OARDC:NLS "Comments button" should be translated in Japanese.</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Hailan Jin" src="images/hailanjin.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4465" target="_BLANK">OSMCLOUD-4465 - OARDC:NLS:T9N:"Custom CSS" should be displayed on right side of "Style".</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2423" target="_BLANK">OSMCLOUD-2423 - NLS: Translation is needed for Bulgarian in page  Contest/Phases/Submissions</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1804" target="_BLANK">OSMCLOUD-1804 - NLS:T13Y:Radio button does not show the radio symbol in Forms module</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1645" target="_BLANK">OSMCLOUD-1645 - WPTG SOCIAL CS:OSEM:BOLDED DIA CHARACTERS</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1629" target="_BLANK">OSMCLOUD-1629 - WPTG Social JA:Social Marketing:INVALID_TR:CONTENT:CONTEST LIST</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1603" target="_BLANK">OSMCLOUD-1603 - WPTG Social SV:Social Marketing:PARTIAL TR: PM AM AND 12 HOUR CLOCK ONLY</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1530" target="_BLANK">OSMCLOUD-1530 - T9N:WPTG Social NO:Social Marketing:UPPERCASE MID STRING</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1475" target="_BLANK">OSMCLOUD-1475 - WPTG TMS_LT_T13Y:SOCIAL:OSEM:Q&A230966:INCORRECT LOWER CASE FOR "PRODUKT"</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1453" target="_BLANK">OSMCLOUD-1453 - WPTG Social es_WW:Social Marketing:WEIRD PAGE OPEN FOR CREATE NEW DEAL</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1407" target="_BLANK">OSMCLOUD-1407 - REG:WPTG Social pt_BR:Social Marketing:SHOP: SHOWING TAGS INSTEAD OF TEXT</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1268" target="_BLANK">OSMCLOUD-1268 - NLS:T13Y:Hard coded strings in window "EMBED THIS VIEW"</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-676" target="_BLANK">OSMCLOUD-676 - WPTG_TBT:VITRUE-SHOP:Q&A227122:CONCAT:MEANING OF STRING 'LEFT' UNCLEAR</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4432" target="_BLANK">OSMCLOUD-4432 - NLSFUN:Can't drug the side bar to true below.</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+    </div>
+
+    <span class="status status32" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">32 - Not a Bug. To Filer      -    (3)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4477" target="_BLANK">OSMCLOUD-4477 - NLSFUN:When click the "Calendar update" button, the page jump to ERR PAGAE</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="SRM Unassigned" src="images/srmunassigned.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4453" target="_BLANK">OSMCLOUD-4453 - NLSFUN: Code should not be visible for user.</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1423" target="_BLANK">OSMCLOUD-1423 - WPTG Social FR:Social Marketing:LAYOUT ISSUE WITH LBS AND INCHES</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+    </div>
+
+    <span class="status status39" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">39 - Approved, waiting for codeline to open      -    (139)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-6385" target="_BLANK">OSMCLOUD-6385 - NLS::T13Y Move date/time format patterns out of translation files</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-6008" target="_BLANK">OSMCLOUD-6008 - NLS:t13y:extra spaces between words when editting a poll or quiz</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5943" target="_BLANK">OSMCLOUD-5943 - NLS:hi:field name display in English in custom form of edit view page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5938" target="_BLANK">OSMCLOUD-5938 - NLS:hi:cannot add a phase when edit a contest in Hindi</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5926" target="_BLANK">OSMCLOUD-5926 - NLS:t13y:Hard-coded string "by" in _header.html.erb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5460" target="_BLANK">OSMCLOUD-5460 - WPTG_TSN:LT:CONCAT:3:SOCIAL:3-260131:CONCATENATED STRINGS</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4924" target="_BLANK">OSMCLOUD-4924 - NLS:T13YCT: Hard-coded strings in application_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4922" target="_BLANK">OSMCLOUD-4922 - NLS:T13YCT: Hard-coded strings in response_sets_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4701" target="_BLANK">OSMCLOUD-4701 - NLS: T13YCT: Hard coded strings in file javascripts/edit_area/edit_area_full.js</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4700" target="_BLANK">OSMCLOUD-4700 - NLS: T13YCT: Hard coded strings in file vendor/assets/javascripts/jquery.form.js</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4699" target="_BLANK">OSMCLOUD-4699 - NLS: T13YCT: Hard coded strings in file javascripts/edit_area/edit_area_loader.j</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4697" target="_BLANK">OSMCLOUD-4697 - NLS: T13YCT: Hard coded strings in file scheduled_collections/leftRightList.js</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4696" target="_BLANK">OSMCLOUD-4696 - NLS: T13YCT: Hard coded strings in file app/assets/javascripts/jqGrid.min.js</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4695" target="_BLANK">OSMCLOUD-4695 - NLS: T13YCT: Hard coded strings in file edit_area/plugins/test/test.js</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2817" target="_BLANK">OSMCLOUD-2817 - NLS:T13Y: hard-coded strings in form submission' CSV file</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Hao Yuan" src="images/haoyuan.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2702" target="_BLANK">OSMCLOUD-2702 - NLS:Chinese:Button text is missing in dialog "Edit Search & Share Module" </a>
+        <span class="label nls_code_defect">nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2698" target="_BLANK">OSMCLOUD-2698 - NLS:T13Y: Hard coded string "px wide" in Gift image </a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2680" target="_BLANK">OSMCLOUD-2680 - NLS: Time stamp needs to consider users' time zone</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2505" target="_BLANK">OSMCLOUD-2505 - NLS:T13Y: Hard coded strings in Poll module's Open Input Answers file</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2149" target="_BLANK">OSMCLOUD-2149 - NLS:T13YCT: Hard coded strings in file ploadable/app/models/admin_user.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2148" target="_BLANK">OSMCLOUD-2148 - NLS:T13YCT: Hard coded strings in file tabs/facebook/contests_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2147" target="_BLANK">OSMCLOUD-2147 - NLS:T13YCT: Hard coded strings in file facebook/submissions_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2146" target="_BLANK">OSMCLOUD-2146 - NLS:T13YCT: Hard coded strings in file controllers/tabs/phases_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2145" target="_BLANK">OSMCLOUD-2145 - NLS:T13YCT: Hard coded strings in file tabs/facebook/submissions/index.html.erb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2144" target="_BLANK">OSMCLOUD-2144 - NLS:T13YCT: Hard coded strings in file tabs/moderation_statuses_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2143" target="_BLANK">OSMCLOUD-2143 - NLS:T13YCT: Hard coded strings in file uploadable/app/models/submission.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2140" target="_BLANK">OSMCLOUD-2140 - NLS:T13YCT: Hard coded strings in file submissions/_submission_content.html.erb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2139" target="_BLANK">OSMCLOUD-2139 - NLS:T13YCT: Hard coded strings in file views/layouts/application.html.erb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2138" target="_BLANK">OSMCLOUD-2138 - NLS:T13YCT: Hard coded strings in file tabs/facebook/facebook/_footer.html.erb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2116" target="_BLANK">OSMCLOUD-2116 - NLS:T13YCT: Hard coded strings in file views/albums/edit.html.erb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2112" target="_BLANK">OSMCLOUD-2112 - NLS: T13YCT: Hard coded strings in file models/share_button.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2111" target="_BLANK">OSMCLOUD-2111 - NLS: T13YCT: Hard coded strings in file controllers/wall_modules_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2110" target="_BLANK">OSMCLOUD-2110 - NLS: T13YCT: Hard coded strings in file controllers/albums_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2108" target="_BLANK">OSMCLOUD-2108 - NLS: T13YCT: Hard coded strings in file controllers/photos_controller.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2107" target="_BLANK">OSMCLOUD-2107 - NLS:T13YCT: Hard coded strings in file app/mailers/user_mailer.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2106" target="_BLANK">OSMCLOUD-2106 - NLS: T13YCT: Hard coded strings in file facebook_pages/_form.html.erb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2105" target="_BLANK">OSMCLOUD-2105 - NLS: T13YCT: Hard coded strings in file gifts/fbml/_gifts_dialog.html.erb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2102" target="_BLANK">OSMCLOUD-2102 - NLS: T13YCT: Hard coded strings in file tabs/app/helpers/gifts_helper.rb</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1816" target="_BLANK">OSMCLOUD-1816 - NLS:T13Y:Hard coded strings in page Contests Form</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1805" target="_BLANK">OSMCLOUD-1805 - NLS:T13Y:Hard coded strings "Please specify a valid postal/zip code"</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1794" target="_BLANK">OSMCLOUD-1794 - NLS:Greek: Severe truncation issue of module Posts in Firefox</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1600" target="_BLANK">OSMCLOUD-1600 - WPTG Social DA:Social Marketing:SHOP: NEW SHIPMENT WINDOW IN US</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1595" target="_BLANK">OSMCLOUD-1595 - NLS:WPTG:DA:Social Marketing:SHOP: DISCOUNT CALCULATOR - HEADING CUT: ORDRE)</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1580" target="_BLANK">OSMCLOUD-1580 - NLS:WPTG Social SV:Social Marketing:SHOP: LAYOUT ISSUE URL FOR STORE</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1579" target="_BLANK">OSMCLOUD-1579 - WPTG Social SV:Social Marketing:PARTIAL TR: SHOP, GENERAL SETTINGS PAGE</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1531" target="_BLANK">OSMCLOUD-1531 - WPTG Social NO:Social Marketing:RADIO BUTTONS NOT ALIGNED</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1509" target="_BLANK">OSMCLOUD-1509 - NLS:T13Y:Hard coded strings in page of configuring contest</a>
+        <span class="label nls_code_defect">nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1502" target="_BLANK">OSMCLOUD-1502 - NLS:WPTG Social DE:Social Marketing:PARTIAL TR: AT</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1466" target="_BLANK">OSMCLOUD-1466 - NLS:T13Y: Hard-coded strings in Video & Photo Contest/Contests:Phases page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1383" target="_BLANK">OSMCLOUD-1383 - WPTG Social fr_CA:Social Marketing:MISMATCH BETWEEN INSTRUCTION AND UI</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1340" target="_BLANK">OSMCLOUD-1340 - NLS:T13Y: Hard-coded strings in Video & Photo Contest/Contests:Entry Form page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1332" target="_BLANK">OSMCLOUD-1332 - NLS:Russian:Firefox:Layout issue in window adding an embeded view</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1331" target="_BLANK">OSMCLOUD-1331 - NLS:Russian:Layout issue in page setting View Style</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1276" target="_BLANK">OSMCLOUD-1276 - nls:t13y: View status on Editing Page after some modifying is hard coded.</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1272" target="_BLANK">OSMCLOUD-1272 - NLS:T13Y: Hard-coded strings in new/edit a page in Connections:My Facebook Pages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1258" target="_BLANK">OSMCLOUD-1258 - NLS:T13Y:Missing translation for string "Posts Comment" in page CSS Class List</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1254" target="_BLANK">OSMCLOUD-1254 - NLS:T13Y:Hard coded string while configuring CONTEST</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1247" target="_BLANK">OSMCLOUD-1247 - NLS:T13Y:Hard coded strings while editing a FORMS module</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1193" target="_BLANK">OSMCLOUD-1193 - NLS:T13Y:Page ORDER EXPORTS has hardcoded string</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1192" target="_BLANK">OSMCLOUD-1192 - nls:t13Y:missing translation on Orders page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1183" target="_BLANK">OSMCLOUD-1183 - NLS:T13Y: Hard-coded strings with Google Plus One module in edit View page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1129" target="_BLANK">OSMCLOUD-1129 - NLS:T13Y:Hard coded strings in calendar event related pages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1112" target="_BLANK">OSMCLOUD-1112 - NLS:T13Y:Hard coded error message while uploading new assets </a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1027" target="_BLANK">OSMCLOUD-1027 - NLS:T13Y: Hard-coded strings in Create Tax Rate page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-982" target="_BLANK">OSMCLOUD-982 - NLS:T13Y: Hard-coded string 'Shipping method' in confirm msg</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-981" target="_BLANK">OSMCLOUD-981 - NLS:T13Y: Hard-coded string 'Shipping Category' in confirm msg</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-980" target="_BLANK">OSMCLOUD-980 - NLS:T13Y: Hard-coded string 'Tax Category' in confirm msg</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-978" target="_BLANK">OSMCLOUD-978 - NLS:T13Y: Hard-coded string 'Zone' in confirm msg in Config:Zone page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-977" target="_BLANK">OSMCLOUD-977 - NLS:T13Y: Hard-coded string 'State' in all confirm msgs in Config:States page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-976" target="_BLANK">OSMCLOUD-976 - NLS:T13Y: Hard-coded string 'Payment Method' in confirm msg</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-974" target="_BLANK">OSMCLOUD-974 - NLS:T13Y: Hard-coded strings in confirm msg editing Share Settings</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-958" target="_BLANK">OSMCLOUD-958 - NLS:T13Y: Hard-coded string 'Shipment' in confirm msg when operating a shipment</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-953" target="_BLANK">OSMCLOUD-953 - NLS:T13Y: Hard-coded strings in Promotion: New/Edit a Discount page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-941" target="_BLANK">OSMCLOUD-941 - NLS:T13Y: Hard-coded string 'Product' in confirm msg when create/edit a product</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-939" target="_BLANK">OSMCLOUD-939 - NLS:T13Y: Hard-coded string 'Product' in confirm msg when edit product features</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-938" target="_BLANK">OSMCLOUD-938 - NLS:T13Y: Hard-coded strings related to product versions operation</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-937" target="_BLANK">OSMCLOUD-937 - NLS:T13Y: Hard-coded string 'Video' in confirm msg when operating product video</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-929" target="_BLANK">OSMCLOUD-929 - NLS:T13Y: SOLD OUT image should not contain text information</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-924" target="_BLANK">OSMCLOUD-924 - NLS: Translation missing displayed in the Country list</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-921" target="_BLANK">OSMCLOUD-921 - NLS:T13Y: hard-coded strings related to product image operation</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-920" target="_BLANK">OSMCLOUD-920 - NLS:  Fails to select date from Date Picker in Russian</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-735" target="_BLANK">OSMCLOUD-735 - nls:IE9: edit view page 'Preview Date' is truncated</a>
+        <span class="label dev_done nls_cannot_reproduce nls_code_defect">dev_done nls_cannot_reproduce nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-726" target="_BLANK">OSMCLOUD-726 - NLS: Wrapping in Edit Design page with French</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-717" target="_BLANK">OSMCLOUD-717 - NLS:T13Y:Hard coded string in page VIEW EDIT</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-716" target="_BLANK">OSMCLOUD-716 - NLS: Date/Time Format should be localized</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-715" target="_BLANK">OSMCLOUD-715 - NLS: "Latest Activity" displayed in a different place in CCJK</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-693" target="_BLANK">OSMCLOUD-693 - NLS:T13Y:Greek:Messing display in pages related to PROMOTIONS->DEALS in Greek</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-692" target="_BLANK">OSMCLOUD-692 - NLS: Fails to EDIT DEAL in some languages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-634" target="_BLANK">OSMCLOUD-634 - NLS:T13Y: Hard-coded strings in Add Payment Method page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-618" target="_BLANK">OSMCLOUD-618 - NLS: Date/time format should be localized (in Orders in Payments page)</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-616" target="_BLANK">OSMCLOUD-616 - NLS: drop-down lists get truncated in Design -> Edit Page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-604" target="_BLANK">OSMCLOUD-604 - NLS: Ja: inconsistent date format displayed in date input fileds</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-561" target="_BLANK">OSMCLOUD-561 - NLS:T13Y: 'admin_products_listing_name_title'is not translated in Product page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-552" target="_BLANK">OSMCLOUD-552 - NLS:T13Y: Hard-coded error msg when adding invalid url in Product:Video page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-545" target="_BLANK">OSMCLOUD-545 - NLS:T13Y: Hard-coded strings in Zones related pages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-543" target="_BLANK">OSMCLOUD-543 - NLS:T13Y: Hard-coded strings in Fulfillment Types page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-542" target="_BLANK">OSMCLOUD-542 - NLS:T13Y: Hard-coded strings in Categories pages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-537" target="_BLANK">OSMCLOUD-537 - NLS:T13Y: Hard-coded strings in Tax Settings related pages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-529" target="_BLANK">OSMCLOUD-529 - NLS:T13Y: some UI strings in Discount related page are not localized</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-528" target="_BLANK">OSMCLOUD-528 - NLS:T13Y: Payments page should be localized</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-525" target="_BLANK">OSMCLOUD-525 - NLS:T13Y: Order History page should be localized</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-516" target="_BLANK">OSMCLOUD-516 - NLS:T13Y: Hard-coded strings in Shipment related pages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-515" target="_BLANK">OSMCLOUD-515 - NLS: Billing Address should be localized</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-514" target="_BLANK">OSMCLOUD-514 - NLS:T13Y: Customer Details page should be localized</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-513" target="_BLANK">OSMCLOUD-513 - NLS:T13Y: Hard-coded strings in Order Details page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-511" target="_BLANK">OSMCLOUD-511 - NLS:T13Y: Hard-coded string in Order Exports page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-510" target="_BLANK">OSMCLOUD-510 - NLS:T13Y: Hard-coded strings in Orders page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-508" target="_BLANK">OSMCLOUD-508 - NLS:T13Y: Hard-coded string "UNITS" in Overview page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-506" target="_BLANK">OSMCLOUD-506 - NLS: Number format should be localized in Overview page</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-431" target="_BLANK">OSMCLOUD-431 - NLS:T13Y: Some hard-coded strings in Product Groups related pages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-426" target="_BLANK">OSMCLOUD-426 - NLS:T13Y: Hard-coded strings in Catetories pages</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-6362" target="_BLANK">OSMCLOUD-6362 - NLS:T13Y: Mis-spell issue in file uploadable_en.yml</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5661" target="_BLANK">OSMCLOUD-5661 - NLS:T9N: incorrect language abbr used in id.yml files</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Baiyu Xi" src="images/baiyuxi.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5660" target="_BLANK">OSMCLOUD-5660 - NLS:T9N: incorrect language abbr used in scommerce/config/locales/id.yml</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3645" target="_BLANK">OSMCLOUD-3645 - NLS:T13YCT: 'edit_url' & 'delete_url' will not be translated</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2797" target="_BLANK">OSMCLOUD-2797 - NLS:T13Y: Hard coded strings under super admin pages</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2777" target="_BLANK">OSMCLOUD-2777 - NLS: Need to localize text font in Contents & Apps</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1552" target="_BLANK">OSMCLOUD-1552 - T9N:WPTG Social ZH_CN:Social Marketing:SHOP - SOURCE - BUTTON</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-360" target="_BLANK">OSMCLOUD-360 - WPTG_TBT:SHOP:CONCAT:Q&A 224816:Word order leading to difficulty in translation</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-346" target="_BLANK">OSMCLOUD-346 - WPTG_TBT:VITRUE-SHOP:Q&A 224826:CONCAT: STRING NOT CAPITALIZED.</a>
+        <span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-6382" target="_BLANK">OSMCLOUD-6382 - NLS::T13Y Move date/time format patterns out of translation files</a>
+        <span class="label dev_done nls_format_issue">dev_done nls_format_issue</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5364" target="_BLANK">OSMCLOUD-5364 - NLS: Chinese characters not displayed completely</a>
+        <span class="label dev_done nls_format_issue">dev_done nls_format_issue</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-934" target="_BLANK">OSMCLOUD-934 - NLS: Taxt Rate doest not support localized number input </a>
+        <span class="label dev_done nls_format_issue">dev_done nls_format_issue</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-413" target="_BLANK">OSMCLOUD-413 - NLS:SHOP: Date/Time Format should be localized</a>
+        <span class="label dev_done nls_format_issue">dev_done nls_format_issue</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5921" target="_BLANK">OSMCLOUD-5921 - NLS:Th:Missing translation in page Contest Entry Form</a>
+        <span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4698" target="_BLANK">OSMCLOUD-4698 - NLS: T13YCT: Hard coded strings in file public/javascripts/nested_form.js</a>
+        <span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1743" target="_BLANK">OSMCLOUD-1743 - WPTG SOCIAL DE:SOCIAL MARKETING:TRUNCATION: MODUL BEARBEITEN</a>
+        <span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-777" target="_BLANK">OSMCLOUD-777 - NLS:T13Y:Hard coded strings in MEDIA Youtube related pages</a>
+        <span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-776" target="_BLANK">OSMCLOUD-776 - NLS:T13Y:Hard coded strings in MEDIA Vimeo related pages</a>
+        <span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2708" target="_BLANK">OSMCLOUD-2708 - NLS: Localization issue in dialog of editing a "iTunes Top Charts" module</a>
+        <span class="label dev_done nls_not_a_bug">dev_done nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2113" target="_BLANK">OSMCLOUD-2113 - NLS: T13YCT: Hard coded strings in file controllers/metrics_controller.rb</a>
+        <span class="label dev_done nls_not_a_bug">dev_done nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5914" target="_BLANK">OSMCLOUD-5914 - NLS:icon for createdmodule in Recent Activity tab is wrong in non-English</a>
+        <span class="label dev_done nls_other">dev_done nls_other</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4467" target="_BLANK">OSMCLOUD-4467 - NLSFUN: layout Issue: set to default, CSS ID list</a>
+        <span class="label dev_done nls_other">dev_done nls_other</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4452" target="_BLANK">OSMCLOUD-4452 - OARDC:NLS:T13Y "Please select" should be translated in Japanese.</a>
+        <span class="label dev_done nls_other">dev_done nls_other</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3970" target="_BLANK">OSMCLOUD-3970 - WPTG_TSN:T9N:OVERTRNS:CRM:S3:9-230347:YEAR/:MONTH/:DAY - TOKEN TRANSLATABILITY</a>
+        <span class="label dev_done nls_other">dev_done nls_other</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2446" target="_BLANK">OSMCLOUD-2446 - NLS:T13Y: String "submit" and "share" are hard coded</a>
+        <span class="label dev_done nls_other">dev_done nls_other</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1857" target="_BLANK">OSMCLOUD-1857 - NLS:T13Y: Hardcoded strings in module Video & Photo Contest</a>
+        <span class="label dev_done nls_other">dev_done nls_other</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1628" target="_BLANK">OSMCLOUD-1628 - WPTG Social JA:Social Marketing:INVALID_TR:CONTENT:CONTEST BASE INFO</a>
+        <span class="label dev_done nls_other">dev_done nls_other</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1473" target="_BLANK">OSMCLOUD-1473 - WPTG_TBT:SOCIAL-TAB:Q&A230199:PLACEHOLDER: MISSING        </a>
+        <span class="label dev_done nls_other">dev_done nls_other</span>
+        <br>
+    
+    </div>
+
+    <span class="status status74" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">74 - Closed, Code/Hardware Fix Verified      -    (19)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5990" target="_BLANK">OSMCLOUD-5990 - NLS: String "Reset Default" is wrapped in some locales</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4512" target="_BLANK">OSMCLOUD-4512 - OARDC:NLS: "posting as.." should be translated in Japanese.</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4511" target="_BLANK">OSMCLOUD-4511 - OARDC:NLS: "facebook social plugin" should be translated in Japanese.</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2703" target="_BLANK">OSMCLOUD-2703 - NLS:T13Y: Submit button text "Submit" is hard coded </a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2506" target="_BLANK">OSMCLOUD-2506 - NLS:T13YCT: Hard coded strings in file wall_module_images_controller.rb</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Jiayuan Chen" src="images/jiayuanchen.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2135" target="_BLANK">OSMCLOUD-2135 - NLS:T13YCT: Hard coded strings in file controllers/facebook_controller.rb</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Jiayuan Chen" src="images/jiayuanchen.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2134" target="_BLANK">OSMCLOUD-2134 - NLS:T13YCT: Hard coded strings in file controllers/twitter_feeds_controller.rb</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Jiayuan Chen" src="images/jiayuanchen.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2133" target="_BLANK">OSMCLOUD-2133 - NLS:T13YCT: Hard coded strings in file  controllers/wall_modules_controller.rb</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Jiayuan Chen" src="images/jiayuanchen.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2131" target="_BLANK">OSMCLOUD-2131 - NLS:T13YCT: Hard coded strings in file controllers/gift_images_controller.rb</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Jiayuan Chen" src="images/jiayuanchen.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2130" target="_BLANK">OSMCLOUD-2130 - NLS:T13YCT: Hard coded strings in file controllers/user_medias_controller.rb</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2124" target="_BLANK">OSMCLOUD-2124 - NLS:T13YCT: Hard coded strings in file wall_module_types_controller.rb</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2104" target="_BLANK">OSMCLOUD-2104 - NLS:T13YCT: Hard coded strings in file app/views/clients/index.html.erb</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1282" target="_BLANK">OSMCLOUD-1282 - NLS:T13Y: Hard coded string "Edit Google Map"</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1189" target="_BLANK">OSMCLOUD-1189 - nls: over translation for 'Pins' on overview page</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-721" target="_BLANK">OSMCLOUD-721 - NLS:T13Y:Hard coded string in page ADMIN</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-613" target="_BLANK">OSMCLOUD-613 - NLS: Inconsistency issue with special characters in Product page</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-612" target="_BLANK">OSMCLOUD-612 - NLS: Special characters cannot be displayed correctly in Product page in Firefox</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-530" target="_BLANK">OSMCLOUD-530 - NLS:T13Y: some UI strings in Deals related page are not localized</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-468" target="_BLANK">OSMCLOUD-468 - NLS:T13Y: Some strings should be localized in FACEBOOK SHARE SETTINGS page</a>
+        <span class="label nls_other">nls_other</span>
+        <br>
+    
+    </div>
+
+    <span class="status status83" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">83 - Closed, Product/Platform Obsolete      -    (1)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-756" target="_BLANK">OSMCLOUD-756 - nls:t13y:Add Like Gate module have hard coded strings</a>
+        <span class="label nls_cannot_reproduce nls_code_defect">nls_cannot_reproduce nls_code_defect</span>
+        <br>
+    
+    </div>
+
+    <span class="status status90" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">90 - Closed, Verified by Filer      -    (2)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1576" target="_BLANK">OSMCLOUD-1576 - T9N:WPTG Social SV:Social Marketing:LAYOUT ISSUE IN SHOP: BALANCE DUE</a>
+        <span class="label dev_done nls_code_defect">dev_done nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-933" target="_BLANK">OSMCLOUD-933 - NLS:T13Y: Hard-coded strings in Design:Edit pages</a>
+        <span class="label nls_code_defect">nls_code_defect</span>
+        <br>
+    
+    </div>
+
+    <span class="status status91" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">91 - Closed, Could Not Reproduce      -    (18)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2700" target="_BLANK">OSMCLOUD-2700 - NLS:T13Y:Hard coded strings in dialog "Edit Search & Share Module"</a>
+        <span class="label nls_code_defect">nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4474" target="_BLANK">OSMCLOUD-4474 - OARDC:NLS: "Sharing" information should be translated in Japanese.</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4472" target="_BLANK">OSMCLOUD-4472 - OARDC:NLS:"Updated" and "Connected" information should be translated in Japanese</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2705" target="_BLANK">OSMCLOUD-2705 - NLS: "translation missing" is seen in dialog of configuring Twitter module</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2684" target="_BLANK">OSMCLOUD-2684 - NLS:T13Y: Hard coded strings when importing an event from Facebook</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1384" target="_BLANK">OSMCLOUD-1384 - REG:NLS:WPTG TMS_LT_F13Y:SOCIAL:SHOP:Q&A23070:PLACEHOLDER SHOULD BE REMOVED</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Nanda Arscott" src="images/nandaarscott.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1173" target="_BLANK">OSMCLOUD-1173 - nls:reg:could not open branding setting page</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-969" target="_BLANK">OSMCLOUD-969 - NLS:T13Y: Hard-coded string 'Adjustment' in confirm msg deleting an adjustment</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-955" target="_BLANK">OSMCLOUD-955 - NLS: Layout issue of Account & Bundles in Shop Home page in Greek</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-927" target="_BLANK">OSMCLOUD-927 - NLS:T13Y: Partially translated strings in Inventory Settings</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-922" target="_BLANK">OSMCLOUD-922 - NLS: Missing buttons when rename or edit product parameter in German</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-919" target="_BLANK">OSMCLOUD-919 - NLS:T13Y: message titles should be localized</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-698" target="_BLANK">OSMCLOUD-698 - NLS:T13Y:String "SHOP" is not localized in page WORKFLOW</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-614" target="_BLANK">OSMCLOUD-614 - NLS: A long parameter name causes layout issues in Product Parameter page</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-526" target="_BLANK">OSMCLOUD-526 - NLS:T13Y: Return Authorizations page should be localized</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-517" target="_BLANK">OSMCLOUD-517 - NLS:T13Y:hard-coded strings in Adjustments related pages</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Fengzhen Cao" src="images/fengzhencao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-467" target="_BLANK">OSMCLOUD-467 - NLS:T13Y: "URL is invalid" should be localized</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Yongwen Zhao" src="images/yongwenzhao.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-458" target="_BLANK">OSMCLOUD-458 - NLS: Fails to open/edit product named with supplementary characters</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+    </div>
+
+    <span class="status status92" style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">92 - Closed, Not a Bug      -    (15)</span>
+    <div style="display: none;margin-top: 10px;">
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-762" target="_BLANK">OSMCLOUD-762 - NLS:T13Y:Instagram module is totally shown in English</a>
+        <span class="label nls_code_defect">nls_code_defect</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2679" target="_BLANK">OSMCLOUD-2679 - NLS: View name doesn't support supplementary characters</a>
+        <span class="label nls_format_issue">nls_format_issue</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2533" target="_BLANK">OSMCLOUD-2533 - NLS: Gift module can not handle surrogate characters</a>
+        <span class="label nls_format_issue">nls_format_issue</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2531" target="_BLANK">OSMCLOUD-2531 - NLS: Poll module can not handle surrogate characters</a>
+        <span class="label nls_format_issue">nls_format_issue</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4693" target="_BLANK">OSMCLOUD-4693 - NLS: T13YCT: Hard coded strings in file assets/javascripts/jqGrid.min.js</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4692" target="_BLANK">OSMCLOUD-4692 - NLS: T13YCT: Hard coded strings in file app/assets/javascripts/jqGrid_4.5.2.js</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Nanda Arscott" src="images/nandaarscott.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-599" target="_BLANK">OSMCLOUD-599 - NLS:FF:Chrome: "Actions" wrapped in CCJK</a>
+        <span class="label nls_cannot_reproduce">nls_cannot_reproduce</span>
+        <br>
+    
+        <img class="avatar" title="Simon Wang" src="images/simonwang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4923" target="_BLANK">OSMCLOUD-4923 - NLS:T13YCT: Hard-coded string "Submit" in _form.html.erb</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3514" target="_BLANK">OSMCLOUD-3514 - NLS:T13YCT: Misspell 'fb_uid' & 'fb uid' are not translated in translation files</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3501" target="_BLANK">OSMCLOUD-3501 - NLS:T13Y:Inconsistent translation behaviors for the same resource string</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3282" target="_BLANK">OSMCLOUD-3282 - NLS: Language configuration has no effect in View Settings </a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Kaiyu Zhang" src="images/kaiyuzhang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2774" target="_BLANK">OSMCLOUD-2774 - NLS:T13Y: All strings inside the view background color picker are hard coded</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Cassie Powell" src="images/cassiepowell.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1347" target="_BLANK">OSMCLOUD-1347 - nls:t13y:reg:hard coded strings on deactive a module</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1164" target="_BLANK">OSMCLOUD-1164 - NLS:T13Y:Hard coded strings in CUSTOM:JSON related pages</a>
+        <span class="label nls_not_a_bug nls_other">nls_not_a_bug nls_other</span>
+        <br>
+    
+        <img class="avatar" title="Silu Yang" src="images/siluyang.png"/>
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-751" target="_BLANK">OSMCLOUD-751 - nls:t13y:Google plus module have hard coded strings.</a>
+        <span class="label nls_not_a_bug">nls_not_a_bug</span>
+        <br>
+    
+    </div>
+
+220 in total.
+<br>
+<h1>Summary by Developers</h1>
+<hr/>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">Baiyu Xi</span>
+    <div style="display: none;margin-top: 10px;">
+      
+      <div class="status status39" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">39 - Approved, waiting for codeline to open</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4701" target="_BLANK">OSMCLOUD-4701 - NLS: T13YCT: Hard coded strings in file javascripts/edit_area/edit_area_full.js</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4700" target="_BLANK">OSMCLOUD-4700 - NLS: T13YCT: Hard coded strings in file vendor/assets/javascripts/jquery.form.js</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4699" target="_BLANK">OSMCLOUD-4699 - NLS: T13YCT: Hard coded strings in file javascripts/edit_area/edit_area_loader.j</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4697" target="_BLANK">OSMCLOUD-4697 - NLS: T13YCT: Hard coded strings in file scheduled_collections/leftRightList.js</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4696" target="_BLANK">OSMCLOUD-4696 - NLS: T13YCT: Hard coded strings in file app/assets/javascripts/jqGrid.min.js</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4695" target="_BLANK">OSMCLOUD-4695 - NLS: T13YCT: Hard coded strings in file edit_area/plugins/test/test.js</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2149" target="_BLANK">OSMCLOUD-2149 - NLS:T13YCT: Hard coded strings in file ploadable/app/models/admin_user.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2148" target="_BLANK">OSMCLOUD-2148 - NLS:T13YCT: Hard coded strings in file tabs/facebook/contests_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2147" target="_BLANK">OSMCLOUD-2147 - NLS:T13YCT: Hard coded strings in file facebook/submissions_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2144" target="_BLANK">OSMCLOUD-2144 - NLS:T13YCT: Hard coded strings in file tabs/moderation_statuses_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2111" target="_BLANK">OSMCLOUD-2111 - NLS: T13YCT: Hard coded strings in file controllers/wall_modules_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2110" target="_BLANK">OSMCLOUD-2110 - NLS: T13YCT: Hard coded strings in file controllers/albums_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2108" target="_BLANK">OSMCLOUD-2108 - NLS: T13YCT: Hard coded strings in file controllers/photos_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2107" target="_BLANK">OSMCLOUD-2107 - NLS:T13YCT: Hard coded strings in file app/mailers/user_mailer.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5661" target="_BLANK">OSMCLOUD-5661 - NLS:T9N: incorrect language abbr used in id.yml files</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5660" target="_BLANK">OSMCLOUD-5660 - NLS:T9N: incorrect language abbr used in scommerce/config/locales/id.yml</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">Fengzhen Cao</span>
+    <div style="display: none;margin-top: 10px;">
+      
+      <div class="status status39" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">39 - Approved, waiting for codeline to open</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5938" target="_BLANK">OSMCLOUD-5938 - NLS:hi:cannot add a phase when edit a contest in Hindi</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2698" target="_BLANK">OSMCLOUD-2698 - NLS:T13Y: Hard coded string "px wide" in Gift image </a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2140" target="_BLANK">OSMCLOUD-2140 - NLS:T13YCT: Hard coded strings in file submissions/_submission_content.html.erb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2116" target="_BLANK">OSMCLOUD-2116 - NLS:T13YCT: Hard coded strings in file views/albums/edit.html.erb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1272" target="_BLANK">OSMCLOUD-1272 - NLS:T13Y: Hard-coded strings in new/edit a page in Connections:My Facebook Pages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-735" target="_BLANK">OSMCLOUD-735 - nls:IE9: edit view page 'Preview Date' is truncated</a><span class="label dev_done nls_cannot_reproduce nls_code_defect">dev_done nls_cannot_reproduce nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-716" target="_BLANK">OSMCLOUD-716 - NLS: Date/Time Format should be localized</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-515" target="_BLANK">OSMCLOUD-515 - NLS: Billing Address should be localized</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2777" target="_BLANK">OSMCLOUD-2777 - NLS: Need to localize text font in Contents & Apps</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4452" target="_BLANK">OSMCLOUD-4452 - OARDC:NLS:T13Y "Please select" should be translated in Japanese.</a><span class="label dev_done nls_other">dev_done nls_other</span><br>
+      
+      
+      <div class="status status83" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">83 - Closed, Product/Platform Obsolete</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-756" target="_BLANK">OSMCLOUD-756 - nls:t13y:Add Like Gate module have hard coded strings</a><span class="label nls_cannot_reproduce nls_code_defect">nls_cannot_reproduce nls_code_defect</span><br>
+      
+      
+      <div class="status status91" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">91 - Closed, Could Not Reproduce</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2700" target="_BLANK">OSMCLOUD-2700 - NLS:T13Y:Hard coded strings in dialog "Edit Search & Share Module"</a><span class="label nls_code_defect">nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2705" target="_BLANK">OSMCLOUD-2705 - NLS: "translation missing" is seen in dialog of configuring Twitter module</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-467" target="_BLANK">OSMCLOUD-467 - NLS:T13Y: "URL is invalid" should be localized</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">Kaiyu Zhang</span>
+    <div style="display: none;margin-top: 10px;">
+      
+      <div class="status status31" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">31 - Could Not Reproduce. To Filer</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4432" target="_BLANK">OSMCLOUD-4432 - NLSFUN:Can't drug the side bar to true below.</a><span class="label nls_not_a_bug">nls_not_a_bug</span><br>
+      
+      
+      <div class="status status39" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">39 - Approved, waiting for codeline to open</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2680" target="_BLANK">OSMCLOUD-2680 - NLS: Time stamp needs to consider users' time zone</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2146" target="_BLANK">OSMCLOUD-2146 - NLS:T13YCT: Hard coded strings in file controllers/tabs/phases_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2145" target="_BLANK">OSMCLOUD-2145 - NLS:T13YCT: Hard coded strings in file tabs/facebook/submissions/index.html.erb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2143" target="_BLANK">OSMCLOUD-2143 - NLS:T13YCT: Hard coded strings in file uploadable/app/models/submission.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2106" target="_BLANK">OSMCLOUD-2106 - NLS: T13YCT: Hard coded strings in file facebook_pages/_form.html.erb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-924" target="_BLANK">OSMCLOUD-924 - NLS: Translation missing displayed in the Country list</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3645" target="_BLANK">OSMCLOUD-3645 - NLS:T13YCT: 'edit_url' & 'delete_url' will not be translated</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-777" target="_BLANK">OSMCLOUD-777 - NLS:T13Y:Hard coded strings in MEDIA Youtube related pages</a><span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-776" target="_BLANK">OSMCLOUD-776 - NLS:T13Y:Hard coded strings in MEDIA Vimeo related pages</a><span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2708" target="_BLANK">OSMCLOUD-2708 - NLS: Localization issue in dialog of editing a "iTunes Top Charts" module</a><span class="label dev_done nls_not_a_bug">dev_done nls_not_a_bug</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4467" target="_BLANK">OSMCLOUD-4467 - NLSFUN: layout Issue: set to default, CSS ID list</a><span class="label dev_done nls_other">dev_done nls_other</span><br>
+      
+      
+      <div class="status status90" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">90 - Closed, Verified by Filer</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-933" target="_BLANK">OSMCLOUD-933 - NLS:T13Y: Hard-coded strings in Design:Edit pages</a><span class="label nls_code_defect">nls_code_defect</span><br>
+      
+      
+      <div class="status status92" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">92 - Closed, Not a Bug</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4693" target="_BLANK">OSMCLOUD-4693 - NLS: T13YCT: Hard coded strings in file assets/javascripts/jqGrid.min.js</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4692" target="_BLANK">OSMCLOUD-4692 - NLS: T13YCT: Hard coded strings in file app/assets/javascripts/jqGrid_4.5.2.js</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3282" target="_BLANK">OSMCLOUD-3282 - NLS: Language configuration has no effect in View Settings </a><span class="label nls_not_a_bug">nls_not_a_bug</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2774" target="_BLANK">OSMCLOUD-2774 - NLS:T13Y: All strings inside the view background color picker are hard coded</a><span class="label nls_not_a_bug">nls_not_a_bug</span><br>
+      
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">Silu Yang</span>
+    <div style="display: none;margin-top: 10px;">
+      
+      <div class="status status11" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">11 - Code/Hardware Bug (Response/Resolution)</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1488" target="_BLANK">OSMCLOUD-1488 - WPTG Social SV:Social Marketing:STRING NOT RELEVANT FOR LANGUAGE USE</a><span class="label nls_other">nls_other</span><br>
+      
+      
+      <div class="status status31" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">31 - Could Not Reproduce. To Filer</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1268" target="_BLANK">OSMCLOUD-1268 - NLS:T13Y:Hard coded strings in window "EMBED THIS VIEW"</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+      
+      <div class="status status39" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">39 - Approved, waiting for codeline to open</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-6008" target="_BLANK">OSMCLOUD-6008 - NLS:t13y:extra spaces between words when editting a poll or quiz</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5926" target="_BLANK">OSMCLOUD-5926 - NLS:t13y:Hard-coded string "by" in _header.html.erb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4924" target="_BLANK">OSMCLOUD-4924 - NLS:T13YCT: Hard-coded strings in application_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4922" target="_BLANK">OSMCLOUD-4922 - NLS:T13YCT: Hard-coded strings in response_sets_controller.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2817" target="_BLANK">OSMCLOUD-2817 - NLS:T13Y: hard-coded strings in form submission' CSV file</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2139" target="_BLANK">OSMCLOUD-2139 - NLS:T13YCT: Hard coded strings in file views/layouts/application.html.erb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2138" target="_BLANK">OSMCLOUD-2138 - NLS:T13YCT: Hard coded strings in file tabs/facebook/facebook/_footer.html.erb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2112" target="_BLANK">OSMCLOUD-2112 - NLS: T13YCT: Hard coded strings in file models/share_button.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2105" target="_BLANK">OSMCLOUD-2105 - NLS: T13YCT: Hard coded strings in file gifts/fbml/_gifts_dialog.html.erb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2102" target="_BLANK">OSMCLOUD-2102 - NLS: T13YCT: Hard coded strings in file tabs/app/helpers/gifts_helper.rb</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1816" target="_BLANK">OSMCLOUD-1816 - NLS:T13Y:Hard coded strings in page Contests Form</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1805" target="_BLANK">OSMCLOUD-1805 - NLS:T13Y:Hard coded strings "Please specify a valid postal/zip code"</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1595" target="_BLANK">OSMCLOUD-1595 - NLS:WPTG:DA:Social Marketing:SHOP: DISCOUNT CALCULATOR - HEADING CUT: ORDRE)</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1580" target="_BLANK">OSMCLOUD-1580 - NLS:WPTG Social SV:Social Marketing:SHOP: LAYOUT ISSUE URL FOR STORE</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1466" target="_BLANK">OSMCLOUD-1466 - NLS:T13Y: Hard-coded strings in Video & Photo Contest/Contests:Phases page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1383" target="_BLANK">OSMCLOUD-1383 - WPTG Social fr_CA:Social Marketing:MISMATCH BETWEEN INSTRUCTION AND UI</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1340" target="_BLANK">OSMCLOUD-1340 - NLS:T13Y: Hard-coded strings in Video & Photo Contest/Contests:Entry Form page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1258" target="_BLANK">OSMCLOUD-1258 - NLS:T13Y:Missing translation for string "Posts Comment" in page CSS Class List</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1254" target="_BLANK">OSMCLOUD-1254 - NLS:T13Y:Hard coded string while configuring CONTEST</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1247" target="_BLANK">OSMCLOUD-1247 - NLS:T13Y:Hard coded strings while editing a FORMS module</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1129" target="_BLANK">OSMCLOUD-1129 - NLS:T13Y:Hard coded strings in calendar event related pages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-6362" target="_BLANK">OSMCLOUD-6362 - NLS:T13Y: Mis-spell issue in file uploadable_en.yml</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1552" target="_BLANK">OSMCLOUD-1552 - T9N:WPTG Social ZH_CN:Social Marketing:SHOP - SOURCE - BUTTON</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-6382" target="_BLANK">OSMCLOUD-6382 - NLS::T13Y Move date/time format patterns out of translation files</a><span class="label dev_done nls_format_issue">dev_done nls_format_issue</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5364" target="_BLANK">OSMCLOUD-5364 - NLS: Chinese characters not displayed completely</a><span class="label dev_done nls_format_issue">dev_done nls_format_issue</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5921" target="_BLANK">OSMCLOUD-5921 - NLS:Th:Missing translation in page Contest Entry Form</a><span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4698" target="_BLANK">OSMCLOUD-4698 - NLS: T13YCT: Hard coded strings in file public/javascripts/nested_form.js</a><span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1743" target="_BLANK">OSMCLOUD-1743 - WPTG SOCIAL DE:SOCIAL MARKETING:TRUNCATION: MODUL BEARBEITEN</a><span class="label dev_done nls_cannot_reproduce">dev_done nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2113" target="_BLANK">OSMCLOUD-2113 - NLS: T13YCT: Hard coded strings in file controllers/metrics_controller.rb</a><span class="label dev_done nls_not_a_bug">dev_done nls_not_a_bug</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1857" target="_BLANK">OSMCLOUD-1857 - NLS:T13Y: Hardcoded strings in module Video & Photo Contest</a><span class="label dev_done nls_other">dev_done nls_other</span><br>
+      
+      
+      <div class="status status92" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">92 - Closed, Not a Bug</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1164" target="_BLANK">OSMCLOUD-1164 - NLS:T13Y:Hard coded strings in CUSTOM:JSON related pages</a><span class="label nls_not_a_bug nls_other">nls_not_a_bug nls_other</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-751" target="_BLANK">OSMCLOUD-751 - nls:t13y:Google plus module have hard coded strings.</a><span class="label nls_not_a_bug">nls_not_a_bug</span><br>
+      
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">Yongwen Zhao</span>
+    <div style="display: none;margin-top: 10px;">
+      
+      <div class="status status26" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">26 - Open/Failed Verification</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-767" target="_BLANK">OSMCLOUD-767 - NLS:T13Y:Search function does not work for module Photo Album</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+      
+      <div class="status status31" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">31 - Could Not Reproduce. To Filer</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1645" target="_BLANK">OSMCLOUD-1645 - WPTG SOCIAL CS:OSEM:BOLDED DIA CHARACTERS</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1629" target="_BLANK">OSMCLOUD-1629 - WPTG Social JA:Social Marketing:INVALID_TR:CONTENT:CONTEST LIST</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1530" target="_BLANK">OSMCLOUD-1530 - T9N:WPTG Social NO:Social Marketing:UPPERCASE MID STRING</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1475" target="_BLANK">OSMCLOUD-1475 - WPTG TMS_LT_T13Y:SOCIAL:OSEM:Q&A230966:INCORRECT LOWER CASE FOR "PRODUKT"</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1453" target="_BLANK">OSMCLOUD-1453 - WPTG Social es_WW:Social Marketing:WEIRD PAGE OPEN FOR CREATE NEW DEAL</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1407" target="_BLANK">OSMCLOUD-1407 - REG:WPTG Social pt_BR:Social Marketing:SHOP: SHOWING TAGS INSTEAD OF TEXT</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-676" target="_BLANK">OSMCLOUD-676 - WPTG_TBT:VITRUE-SHOP:Q&A227122:CONCAT:MEANING OF STRING 'LEFT' UNCLEAR</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+      
+      <div class="status status32" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">32 - Not a Bug. To Filer</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1423" target="_BLANK">OSMCLOUD-1423 - WPTG Social FR:Social Marketing:LAYOUT ISSUE WITH LBS AND INCHES</a><span class="label nls_not_a_bug">nls_not_a_bug</span><br>
+      
+      
+      <div class="status status39" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">39 - Approved, waiting for codeline to open</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-6385" target="_BLANK">OSMCLOUD-6385 - NLS::T13Y Move date/time format patterns out of translation files</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5943" target="_BLANK">OSMCLOUD-5943 - NLS:hi:field name display in English in custom form of edit view page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5460" target="_BLANK">OSMCLOUD-5460 - WPTG_TSN:LT:CONCAT:3:SOCIAL:3-260131:CONCATENATED STRINGS</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2505" target="_BLANK">OSMCLOUD-2505 - NLS:T13Y: Hard coded strings in Poll module's Open Input Answers file</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1794" target="_BLANK">OSMCLOUD-1794 - NLS:Greek: Severe truncation issue of module Posts in Firefox</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1600" target="_BLANK">OSMCLOUD-1600 - WPTG Social DA:Social Marketing:SHOP: NEW SHIPMENT WINDOW IN US</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1579" target="_BLANK">OSMCLOUD-1579 - WPTG Social SV:Social Marketing:PARTIAL TR: SHOP, GENERAL SETTINGS PAGE</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1531" target="_BLANK">OSMCLOUD-1531 - WPTG Social NO:Social Marketing:RADIO BUTTONS NOT ALIGNED</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1509" target="_BLANK">OSMCLOUD-1509 - NLS:T13Y:Hard coded strings in page of configuring contest</a><span class="label nls_code_defect">nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1502" target="_BLANK">OSMCLOUD-1502 - NLS:WPTG Social DE:Social Marketing:PARTIAL TR: AT</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1332" target="_BLANK">OSMCLOUD-1332 - NLS:Russian:Firefox:Layout issue in window adding an embeded view</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1331" target="_BLANK">OSMCLOUD-1331 - NLS:Russian:Layout issue in page setting View Style</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1276" target="_BLANK">OSMCLOUD-1276 - nls:t13y: View status on Editing Page after some modifying is hard coded.</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1193" target="_BLANK">OSMCLOUD-1193 - NLS:T13Y:Page ORDER EXPORTS has hardcoded string</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1192" target="_BLANK">OSMCLOUD-1192 - nls:t13Y:missing translation on Orders page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1183" target="_BLANK">OSMCLOUD-1183 - NLS:T13Y: Hard-coded strings with Google Plus One module in edit View page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1112" target="_BLANK">OSMCLOUD-1112 - NLS:T13Y:Hard coded error message while uploading new assets </a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1027" target="_BLANK">OSMCLOUD-1027 - NLS:T13Y: Hard-coded strings in Create Tax Rate page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-982" target="_BLANK">OSMCLOUD-982 - NLS:T13Y: Hard-coded string 'Shipping method' in confirm msg</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-981" target="_BLANK">OSMCLOUD-981 - NLS:T13Y: Hard-coded string 'Shipping Category' in confirm msg</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-980" target="_BLANK">OSMCLOUD-980 - NLS:T13Y: Hard-coded string 'Tax Category' in confirm msg</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-978" target="_BLANK">OSMCLOUD-978 - NLS:T13Y: Hard-coded string 'Zone' in confirm msg in Config:Zone page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-977" target="_BLANK">OSMCLOUD-977 - NLS:T13Y: Hard-coded string 'State' in all confirm msgs in Config:States page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-976" target="_BLANK">OSMCLOUD-976 - NLS:T13Y: Hard-coded string 'Payment Method' in confirm msg</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-974" target="_BLANK">OSMCLOUD-974 - NLS:T13Y: Hard-coded strings in confirm msg editing Share Settings</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-958" target="_BLANK">OSMCLOUD-958 - NLS:T13Y: Hard-coded string 'Shipment' in confirm msg when operating a shipment</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-953" target="_BLANK">OSMCLOUD-953 - NLS:T13Y: Hard-coded strings in Promotion: New/Edit a Discount page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-941" target="_BLANK">OSMCLOUD-941 - NLS:T13Y: Hard-coded string 'Product' in confirm msg when create/edit a product</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-939" target="_BLANK">OSMCLOUD-939 - NLS:T13Y: Hard-coded string 'Product' in confirm msg when edit product features</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-938" target="_BLANK">OSMCLOUD-938 - NLS:T13Y: Hard-coded strings related to product versions operation</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-937" target="_BLANK">OSMCLOUD-937 - NLS:T13Y: Hard-coded string 'Video' in confirm msg when operating product video</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-929" target="_BLANK">OSMCLOUD-929 - NLS:T13Y: SOLD OUT image should not contain text information</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-921" target="_BLANK">OSMCLOUD-921 - NLS:T13Y: hard-coded strings related to product image operation</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-920" target="_BLANK">OSMCLOUD-920 - NLS:  Fails to select date from Date Picker in Russian</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-726" target="_BLANK">OSMCLOUD-726 - NLS: Wrapping in Edit Design page with French</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-717" target="_BLANK">OSMCLOUD-717 - NLS:T13Y:Hard coded string in page VIEW EDIT</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-715" target="_BLANK">OSMCLOUD-715 - NLS: "Latest Activity" displayed in a different place in CCJK</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-693" target="_BLANK">OSMCLOUD-693 - NLS:T13Y:Greek:Messing display in pages related to PROMOTIONS->DEALS in Greek</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-692" target="_BLANK">OSMCLOUD-692 - NLS: Fails to EDIT DEAL in some languages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-634" target="_BLANK">OSMCLOUD-634 - NLS:T13Y: Hard-coded strings in Add Payment Method page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-618" target="_BLANK">OSMCLOUD-618 - NLS: Date/time format should be localized (in Orders in Payments page)</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-616" target="_BLANK">OSMCLOUD-616 - NLS: drop-down lists get truncated in Design -> Edit Page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-604" target="_BLANK">OSMCLOUD-604 - NLS: Ja: inconsistent date format displayed in date input fileds</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-561" target="_BLANK">OSMCLOUD-561 - NLS:T13Y: 'admin_products_listing_name_title'is not translated in Product page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-552" target="_BLANK">OSMCLOUD-552 - NLS:T13Y: Hard-coded error msg when adding invalid url in Product:Video page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-545" target="_BLANK">OSMCLOUD-545 - NLS:T13Y: Hard-coded strings in Zones related pages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-543" target="_BLANK">OSMCLOUD-543 - NLS:T13Y: Hard-coded strings in Fulfillment Types page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-542" target="_BLANK">OSMCLOUD-542 - NLS:T13Y: Hard-coded strings in Categories pages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-537" target="_BLANK">OSMCLOUD-537 - NLS:T13Y: Hard-coded strings in Tax Settings related pages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-529" target="_BLANK">OSMCLOUD-529 - NLS:T13Y: some UI strings in Discount related page are not localized</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-528" target="_BLANK">OSMCLOUD-528 - NLS:T13Y: Payments page should be localized</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-525" target="_BLANK">OSMCLOUD-525 - NLS:T13Y: Order History page should be localized</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-516" target="_BLANK">OSMCLOUD-516 - NLS:T13Y: Hard-coded strings in Shipment related pages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-514" target="_BLANK">OSMCLOUD-514 - NLS:T13Y: Customer Details page should be localized</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-513" target="_BLANK">OSMCLOUD-513 - NLS:T13Y: Hard-coded strings in Order Details page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-511" target="_BLANK">OSMCLOUD-511 - NLS:T13Y: Hard-coded string in Order Exports page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-510" target="_BLANK">OSMCLOUD-510 - NLS:T13Y: Hard-coded strings in Orders page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-508" target="_BLANK">OSMCLOUD-508 - NLS:T13Y: Hard-coded string "UNITS" in Overview page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-506" target="_BLANK">OSMCLOUD-506 - NLS: Number format should be localized in Overview page</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-431" target="_BLANK">OSMCLOUD-431 - NLS:T13Y: Some hard-coded strings in Product Groups related pages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-426" target="_BLANK">OSMCLOUD-426 - NLS:T13Y: Hard-coded strings in Catetories pages</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2797" target="_BLANK">OSMCLOUD-2797 - NLS:T13Y: Hard coded strings under super admin pages</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-360" target="_BLANK">OSMCLOUD-360 - WPTG_TBT:SHOP:CONCAT:Q&A 224816:Word order leading to difficulty in translation</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-346" target="_BLANK">OSMCLOUD-346 - WPTG_TBT:VITRUE-SHOP:Q&A 224826:CONCAT: STRING NOT CAPITALIZED.</a><span class="label dev_done nls_incorrect_I18N">dev_done nls_incorrect_I18N</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-934" target="_BLANK">OSMCLOUD-934 - NLS: Taxt Rate doest not support localized number input </a><span class="label dev_done nls_format_issue">dev_done nls_format_issue</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-413" target="_BLANK">OSMCLOUD-413 - NLS:SHOP: Date/Time Format should be localized</a><span class="label dev_done nls_format_issue">dev_done nls_format_issue</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5914" target="_BLANK">OSMCLOUD-5914 - NLS:icon for createdmodule in Recent Activity tab is wrong in non-English</a><span class="label dev_done nls_other">dev_done nls_other</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3970" target="_BLANK">OSMCLOUD-3970 - WPTG_TSN:T9N:OVERTRNS:CRM:S3:9-230347:YEAR/:MONTH/:DAY - TOKEN TRANSLATABILITY</a><span class="label dev_done nls_other">dev_done nls_other</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2446" target="_BLANK">OSMCLOUD-2446 - NLS:T13Y: String "submit" and "share" are hard coded</a><span class="label dev_done nls_other">dev_done nls_other</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1628" target="_BLANK">OSMCLOUD-1628 - WPTG Social JA:Social Marketing:INVALID_TR:CONTENT:CONTEST BASE INFO</a><span class="label dev_done nls_other">dev_done nls_other</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1473" target="_BLANK">OSMCLOUD-1473 - WPTG_TBT:SOCIAL-TAB:Q&A230199:PLACEHOLDER: MISSING        </a><span class="label dev_done nls_other">dev_done nls_other</span><br>
+      
+      
+      <div class="status status74" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">74 - Closed, Code/Hardware Fix Verified</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-5990" target="_BLANK">OSMCLOUD-5990 - NLS: String "Reset Default" is wrapped in some locales</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1189" target="_BLANK">OSMCLOUD-1189 - nls: over translation for 'Pins' on overview page</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-613" target="_BLANK">OSMCLOUD-613 - NLS: Inconsistency issue with special characters in Product page</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-612" target="_BLANK">OSMCLOUD-612 - NLS: Special characters cannot be displayed correctly in Product page in Firefox</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-530" target="_BLANK">OSMCLOUD-530 - NLS:T13Y: some UI strings in Deals related page are not localized</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-468" target="_BLANK">OSMCLOUD-468 - NLS:T13Y: Some strings should be localized in FACEBOOK SHARE SETTINGS page</a><span class="label nls_other">nls_other</span><br>
+      
+      
+      <div class="status status90" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">90 - Closed, Verified by Filer</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1576" target="_BLANK">OSMCLOUD-1576 - T9N:WPTG Social SV:Social Marketing:LAYOUT ISSUE IN SHOP: BALANCE DUE</a><span class="label dev_done nls_code_defect">dev_done nls_code_defect</span><br>
+      
+      
+      <div class="status status91" style="font-weight: bold;margin-top: 5px;margin-bottom: 5px;">91 - Closed, Could Not Reproduce</div>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1384" target="_BLANK">OSMCLOUD-1384 - REG:NLS:WPTG TMS_LT_F13Y:SOCIAL:SHOP:Q&A23070:PLACEHOLDER SHOULD BE REMOVED</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-969" target="_BLANK">OSMCLOUD-969 - NLS:T13Y: Hard-coded string 'Adjustment' in confirm msg deleting an adjustment</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-955" target="_BLANK">OSMCLOUD-955 - NLS: Layout issue of Account & Bundles in Shop Home page in Greek</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-927" target="_BLANK">OSMCLOUD-927 - NLS:T13Y: Partially translated strings in Inventory Settings</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-922" target="_BLANK">OSMCLOUD-922 - NLS: Missing buttons when rename or edit product parameter in German</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-919" target="_BLANK">OSMCLOUD-919 - NLS:T13Y: message titles should be localized</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-698" target="_BLANK">OSMCLOUD-698 - NLS:T13Y:String "SHOP" is not localized in page WORKFLOW</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-614" target="_BLANK">OSMCLOUD-614 - NLS: A long parameter name causes layout issues in Product Parameter page</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-526" target="_BLANK">OSMCLOUD-526 - NLS:T13Y: Return Authorizations page should be localized</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-517" target="_BLANK">OSMCLOUD-517 - NLS:T13Y:hard-coded strings in Adjustments related pages</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+          <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-458" target="_BLANK">OSMCLOUD-458 - NLS: Fails to open/edit product named with supplementary characters</a><span class="label nls_cannot_reproduce">nls_cannot_reproduce</span><br>
+      
+      
+    </div>
+
+<br>
+<h1>Unassigned Stories</h1>
+<hr/>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">nls_cannot_reproduce (25)</span>
+    <div style="display: none;margin-top: 10px;">
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4512" target="_BLANK">OSMCLOUD-4512 - OARDC:NLS: "posting as.." should be translated in Japanese.</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4511" target="_BLANK">OSMCLOUD-4511 - OARDC:NLS: "facebook social plugin" should be translated in Japanese.</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4510" target="_BLANK">OSMCLOUD-4510 - OARDC:NLS "Also post on facebook" should be translated in Japanese.</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4509" target="_BLANK">OSMCLOUD-4509 - OARDC:NLS: "Add comment" should be translated in Japanese.</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4508" target="_BLANK">OSMCLOUD-4508 - OARDC:NLS "Comments button" should be translated in Japanese.</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4474" target="_BLANK">OSMCLOUD-4474 - OARDC:NLS: "Sharing" information should be translated in Japanese.</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4472" target="_BLANK">OSMCLOUD-4472 - OARDC:NLS:"Updated" and "Connected" information should be translated in Japanese</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4465" target="_BLANK">OSMCLOUD-4465 - OARDC:NLS:T9N:"Custom CSS" should be displayed on right side of "Style".</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2703" target="_BLANK">OSMCLOUD-2703 - NLS:T13Y: Submit button text "Submit" is hard coded </a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2684" target="_BLANK">OSMCLOUD-2684 - NLS:T13Y: Hard coded strings when importing an event from Facebook</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2506" target="_BLANK">OSMCLOUD-2506 - NLS:T13YCT: Hard coded strings in file wall_module_images_controller.rb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2423" target="_BLANK">OSMCLOUD-2423 - NLS: Translation is needed for Bulgarian in page  Contest/Phases/Submissions</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2135" target="_BLANK">OSMCLOUD-2135 - NLS:T13YCT: Hard coded strings in file controllers/facebook_controller.rb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2134" target="_BLANK">OSMCLOUD-2134 - NLS:T13YCT: Hard coded strings in file controllers/twitter_feeds_controller.rb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2133" target="_BLANK">OSMCLOUD-2133 - NLS:T13YCT: Hard coded strings in file  controllers/wall_modules_controller.rb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2131" target="_BLANK">OSMCLOUD-2131 - NLS:T13YCT: Hard coded strings in file controllers/gift_images_controller.rb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2130" target="_BLANK">OSMCLOUD-2130 - NLS:T13YCT: Hard coded strings in file controllers/user_medias_controller.rb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2124" target="_BLANK">OSMCLOUD-2124 - NLS:T13YCT: Hard coded strings in file wall_module_types_controller.rb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2104" target="_BLANK">OSMCLOUD-2104 - NLS:T13YCT: Hard coded strings in file app/views/clients/index.html.erb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1804" target="_BLANK">OSMCLOUD-1804 - NLS:T13Y:Radio button does not show the radio symbol in Forms module</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1603" target="_BLANK">OSMCLOUD-1603 - WPTG Social SV:Social Marketing:PARTIAL TR: PM AM AND 12 HOUR CLOCK ONLY</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1282" target="_BLANK">OSMCLOUD-1282 - NLS:T13Y: Hard coded string "Edit Google Map"</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1173" target="_BLANK">OSMCLOUD-1173 - nls:reg:could not open branding setting page</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-721" target="_BLANK">OSMCLOUD-721 - NLS:T13Y:Hard coded string in page ADMIN</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-599" target="_BLANK">OSMCLOUD-599 - NLS:FF:Chrome: "Actions" wrapped in CCJK</a><br>
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">nls_cannot_reproduce,nls_incorrect_I18N (1)</span>
+    <div style="display: none;margin-top: 10px;">
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1500" target="_BLANK">OSMCLOUD-1500 - WPTG Social DE:Social Marketing:STRING NUKU'ALOFA DISPLAYED ON DEALS SCREEN</a><br>
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">nls_code_defect (3)</span>
+    <div style="display: none;margin-top: 10px;">
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2702" target="_BLANK">OSMCLOUD-2702 - NLS:Chinese:Button text is missing in dialog "Edit Search & Share Module" </a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2422" target="_BLANK">OSMCLOUD-2422 - NLS:T13Y: Strings are hard coded in Spotify editing dialog </a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-762" target="_BLANK">OSMCLOUD-762 - NLS:T13Y:Instagram module is totally shown in English</a><br>
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">nls_format_issue (3)</span>
+    <div style="display: none;margin-top: 10px;">
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2679" target="_BLANK">OSMCLOUD-2679 - NLS: View name doesn't support supplementary characters</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2533" target="_BLANK">OSMCLOUD-2533 - NLS: Gift module can not handle surrogate characters</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-2531" target="_BLANK">OSMCLOUD-2531 - NLS: Poll module can not handle surrogate characters</a><br>
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">nls_not_a_bug (7)</span>
+    <div style="display: none;margin-top: 10px;">
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4923" target="_BLANK">OSMCLOUD-4923 - NLS:T13YCT: Hard-coded string "Submit" in _form.html.erb</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4477" target="_BLANK">OSMCLOUD-4477 - NLSFUN:When click the "Calendar update" button, the page jump to ERR PAGAE</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4453" target="_BLANK">OSMCLOUD-4453 - NLSFUN: Code should not be visible for user.</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3514" target="_BLANK">OSMCLOUD-3514 - NLS:T13YCT: Misspell 'fb_uid' & 'fb uid' are not translated in translation files</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-3501" target="_BLANK">OSMCLOUD-3501 - NLS:T13Y:Inconsistent translation behaviors for the same resource string</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1347" target="_BLANK">OSMCLOUD-1347 - nls:t13y:reg:hard coded strings on deactive a module</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1266" target="_BLANK">OSMCLOUD-1266 - NLS:T13Y:String "Default Brand Template" is hard coded</a><br>
+      
+    </div>
+
+    <span style="display: block;font-size: 12pt;font-weight:bold;margin-bottom: 5px;margin-top: 5px;text-decoration: underline;cursor: pointer;" onclick="toggleNext(this)">nls_other (2)</span>
+    <div style="display: none;margin-top: 10px;">
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-4639" target="_BLANK">OSMCLOUD-4639 - NLSFUN:"full with alph" and "half with alph" should be in common use.</a><br>
+      
+        <a href="https://jira.oraclecorp.com/jira/browse/OSMCLOUD-1636" target="_BLANK">OSMCLOUD-1636 - WPTG Social JA:Social Marketing:INVALID_TR:CONTENT:CONTEST SUBMISSION MODERATION</a><br>
+      
+    </div>
+
+</body>
+</html>
